@@ -1,0 +1,21 @@
+#include<stdio.h>;
+ int main()
+ { 
+  long long n;
+  int count = 0;
+  printf("enter an integer:");
+  scanf("%lld",&n);
+  
+  // iterate at least once, then until n becomes o
+  // remove last digit from n in each iteration
+  // increase count by 1 in each iteration
+  do
+  { 
+   n /= 10;
+   ++count;
+  } 
+  while (n !=0);
+   
+   printf("number of digits: %d", count);
+   return 0;
+ }
